@@ -1,0 +1,242 @@
+/*.tek{
+    position: relative;
+
+    color: orange;
+    text-align: center;
+    margin-top: 280px;
+    margin-bottom: 30px;
+    font-size: 100px;
+    
+
+    
+}
+.vowel{
+    color: red;
+    cursor: pointer;
+}
+.wrong{
+    color:orange;
+    cursor: default;
+    pointer-events: none;
+}
+.wright{
+    text-transform: uppercase;
+}
+.block{
+    display: flex;
+}
+#play{
+    display: none; 
+    position: absolute;
+    
+    width: 153px;
+    margin-left: 470px;
+    
+}
+#next{
+    display: none; 
+    position: absolute;
+
+    border-color: rgb(255, 166, 0);
+    background-color: rgb(246, 185, 72);
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size:medium;
+    width: 180px;
+    height: 60px;
+
+    margin-left: 958px;
+    margin-top:-20px;
+    
+}
+#stop{
+    display: none;
+    position: absolute;
+
+    background-color: rgb(255, 111, 111);
+    border-color: brown;
+    border-radius: 5px;
+
+    width: 153px;
+    height: 45px;
+    
+    font-size: large;
+
+    margin-left: 470px;
+    margin-top:60px;
+
+    
+}
+#stop:hover{
+    background-color: rgb(200, 87, 87);
+    transition: transform 0.3s ease;
+}
+#again{
+    width: 200px;
+    height: 60px;
+    margin-left: 650px;
+    margin-top:40px;
+
+    background-color: rgb(255, 111, 111);
+    border-color: brown;
+    border-radius: 5px;
+
+    font-size: large;
+
+}
+#again:hover{
+    background-color: rgb(200, 87, 87);
+    transition: transform 0.3s ease;
+}
+#counter{
+    
+    display: none;
+    font-size: 20px;
+    margin-left: 450px;
+    margin-top: -55px;
+    
+}
+#continue{
+    border-color: rgb(255, 166, 0);
+    background-color: rgb(246, 185, 72);
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size:medium;
+
+    width: 180px;
+    height: 60px;
+    margin-left: 900px;
+
+}*/
+.tek {
+    position: relative;
+    color: orange;
+    text-align: center;
+    margin-top: 40vh;
+    margin-bottom: 30px;
+    font-size: 10vw; /* адаптивный размер шрифта */
+  }
+
+  
+  .vowel {
+    color: red;
+    cursor: pointer;
+  }
+  .wrong {
+    color: orange;
+    cursor: default;
+    pointer-events: none;
+  }
+  .wright {
+    text-transform: uppercase;
+  }
+  .block {
+    display: flex;
+  }
+
+  /* Контейнер для кнопок */
+  .buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 180px;
+    margin-top: 40px;
+  }
+
+  /* Общие стили для всех кнопок */
+  button {
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 20px;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  /* Индивидуальные стили (цвета, границы) */
+  #play {
+    background-color: rgb(162, 214, 243);
+    border-color: rgb(74, 136, 169);;
+    color: black;
+    display: none;
+  }
+  #play:hover {
+    background-color: rgb(81, 137, 167);
+    transition: transform 0.3s ease;
+  }
+  #next {
+    background-color: rgb(246, 185, 72);
+    color: white;
+    border: 2px solid rgb(255, 166, 0);
+    display: none; 
+  }
+  #next:hover {
+    background-color: rgb(218, 158, 49);
+    transition: transform 0.3s ease;
+  }
+  #stop {
+    background-color: rgb(255, 111, 111);
+    border: 2px solid brown;
+    border-radius: 5px;
+    width: 153px;
+    height: 45px;
+    font-size: large;
+    display: none; 
+  }
+  #stop:hover {
+    background-color: rgb(200, 87, 87);
+    transition: transform 0.3s ease;
+  }
+  #again {
+    background-color: rgb(255, 111, 111);
+    border: 2px solid brown;
+    border-radius: 5px;
+    font-size: large;
+  }
+  #again:hover {
+    background-color: rgb(200, 87, 87);
+    transition: transform 0.3s ease;
+  }
+  #continue {
+    background-color: rgb(246, 185, 72);
+    color: white;
+    border: 2px solid rgb(255, 166, 0);
+  }
+  #continue:hover {
+    background-color: rgb(218, 158, 49);
+    transition: transform 0.3s ease;
+  }
+
+  /* Счётчик */
+  #counter {
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Адаптация для маленьких экранов */
+  @media (max-width: 768px) {
+    .tek {
+      font-size: 12vw;
+      margin-top: 30vh;
+    }
+    button {
+      width: 140px;
+      height: 50px;
+      font-size: small;
+    }
+    #stop {
+      width: 120px;
+      height: 40px;
+      font-size: small;
+    }
+  }
+.play-stop-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* выравнивание по центру */
+  gap: 40px; /* расстояние между кнопками */
+}
